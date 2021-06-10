@@ -1,5 +1,4 @@
 // Write your helper functions here!
-require('isomorphic-fetch');
 
 function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
   let ele = document.getElementById("missionTarget");
@@ -109,9 +108,3 @@ function pickPlanet(planets) {
   let randomIndex = Math.floor(Math.random() * planets.length);
   return planets[randomIndex];
 }
-
-module.exports.addDestinationInfo = addDestinationInfo;
-module.exports.validateInput = validateInput;
-module.exports.formSubmission = formSubmission;
-module.exports.pickPlanet = pickPlanet;
-module.exports.myFetch = myFetch;

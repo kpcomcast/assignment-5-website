@@ -43,9 +43,7 @@ window.addEventListener("load", function () {
   let listedPlanetsResponse = myFetch();
   listedPlanetsResponse.then(function (result) {
     listedPlanets = result;
-    console.log(listedPlanets);
   }).then(function () {
-    console.log(listedPlanets);
     // Below this comment call the appropriate helper functions to pick a planet fom the list of planets and add that information to your destination.
     let pick = pickPlanet(listedPlanets);
     addDestinationInfo(document, pick.name, pick.diameter, pick.star, pick.distance, pick.moons, pick.image);
