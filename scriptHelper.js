@@ -7,29 +7,27 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 
   let head = document.createElement("h2");
   head.innerHTML = "Mission Destination";
+
   let planetImg = document.createElement("img");
   planetImg.src = imageUrl;
   
   let planetItems = document.createElement("ol");
-
   let liName = document.createElement("li");
-  liName.innerHTML = `Name: ${name}`;
-  planetItems.appendChild(liName);
-
   let liDiameter = document.createElement("li");
-  liDiameter.innerHTML = `Diameter: ${diameter}`;
-  planetItems.appendChild(liDiameter);
-
   let liStar = document.createElement("li");
-  liStar.innerHTML = `Star: ${star}`;
-  planetItems.appendChild(liStar);
-
   let liDistance = document.createElement("li");
-  liDistance.innerHTML = `Distance from Earth: ${distance}`;
-  planetItems.appendChild(liDistance);
-
   let liMoons = document.createElement("li");
+
+  liName.innerHTML = `Name: ${name}`;
+  liDiameter.innerHTML = `Diameter: ${diameter}`;
+  liStar.innerHTML = `Star: ${star}`;
+  liDistance.innerHTML = `Distance from Earth: ${distance}`;
   liMoons.innerHTML = `Number of Moons: ${moons}`;
+  
+  planetItems.appendChild(liName);
+  planetItems.appendChild(liDiameter);
+  planetItems.appendChild(liStar);
+  planetItems.appendChild(liDistance);
   planetItems.appendChild(liMoons);
 
   ele.appendChild(head);
