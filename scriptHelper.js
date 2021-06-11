@@ -2,36 +2,44 @@
 
 function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
   let ele = document.getElementById("missionTarget");
-  ele.innerHTML = "";
+  ele.innerHTML = `<h2>Mission Destination</h2>
+  <ol>
+      <li>Name: ${name}</li>
+      <li>Diameter: ${diameter}</li>
+      <li>Star: ${star}</li>
+      <li>Distance from Earth: ${distance}</li>
+      <li>Number of Moons: ${moons}</li>
+  </ol>
+  <img src="${imageUrl}">`;
 
-  let head = document.createElement("h2");
-  head.innerHTML = "Mission Destination";
+  // let head = document.createElement("h2");
+  // head.innerHTML = "Mission Destination";
 
-  let planetImg = document.createElement("img");
-  planetImg.src = imageUrl;
+  // let planetImg = document.createElement("img");
+  // planetImg.src = imageUrl;
   
-  let planetItems = document.createElement("ol");
-  let liName = document.createElement("li");
-  let liDiameter = document.createElement("li");
-  let liStar = document.createElement("li");
-  let liDistance = document.createElement("li");
-  let liMoons = document.createElement("li");
+  // let planetItems = document.createElement("ol");
+  // let liName = document.createElement("li");
+  // let liDiameter = document.createElement("li");
+  // let liStar = document.createElement("li");
+  // let liDistance = document.createElement("li");
+  // let liMoons = document.createElement("li");
 
-  liName.innerHTML = `Name: ${name}`;
-  liDiameter.innerHTML = `Diameter: ${diameter}`;
-  liStar.innerHTML = `Star: ${star}`;
-  liDistance.innerHTML = `Distance from Earth: ${distance}`;
-  liMoons.innerHTML = `Number of Moons: ${moons}`;
+  // liName.innerHTML = `Name: ${name}`;
+  // liDiameter.innerHTML = `Diameter: ${diameter}`;
+  // liStar.innerHTML = `Star: ${star}`;
+  // liDistance.innerHTML = `Distance from Earth: ${distance}`;
+  // liMoons.innerHTML = `Number of Moons: ${moons}`;
   
-  planetItems.appendChild(liName);
-  planetItems.appendChild(liDiameter);
-  planetItems.appendChild(liStar);
-  planetItems.appendChild(liDistance);
-  planetItems.appendChild(liMoons);
+  // planetItems.appendChild(liName);
+  // planetItems.appendChild(liDiameter);
+  // planetItems.appendChild(liStar);
+  // planetItems.appendChild(liDistance);
+  // planetItems.appendChild(liMoons);
 
-  ele.appendChild(head);
-  ele.appendChild(planetItems);
-  ele.appendChild(planetImg);
+  // ele.appendChild(head);
+  // ele.appendChild(planetItems);
+  // ele.appendChild(planetImg);
   // Here is the HTML formatting for our mission target div.
   /*
                <h2>Mission Destination</h2>
